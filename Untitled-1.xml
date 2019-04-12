@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TikTok_Dice_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="QF4-BA-Eyd">
+                                <rect key="frame" x="16" y="192" width="343" height="139"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z2i-AD-7YK">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="139"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vgU-5j-roB">
+                                        <rect key="frame" x="183" y="0.0" width="160" height="139"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="rRg-kz-mC2"/>
+                                    <constraint firstAttribute="height" constant="139" id="zIs-1U-YKL"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ipa-j9-vZe">
+                                <rect key="frame" x="148" y="40" width="79" height="24"/>
+                                <color key="backgroundColor" red="0.32642555236816406" green="0.74495035409927368" blue="0.64760053157806396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ld-FQ-dRt">
+                                <rect key="frame" x="133" y="381" width="109" height="36"/>
+                                <color key="backgroundColor" red="0.32642555236816406" green="0.74495035409927368" blue="0.64760053157806396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Roll the Dice">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21706944704055786" green="0.51504212617874146" blue="0.44211241602897644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Ld-FQ-dRt" secondAttribute="bottom" constant="50" id="0aN-p9-COa">
+                                <variation key="heightClass=regular-widthClass=compact" constant="250"/>
+                            </constraint>
+                            <constraint firstItem="4Ld-FQ-dRt" firstAttribute="top" secondItem="QF4-BA-Eyd" secondAttribute="bottom" constant="50" id="1hO-KK-kqu"/>
+                            <constraint firstItem="4Ld-FQ-dRt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H3e-Ro-LAG"/>
+                            <constraint firstItem="Ipa-j9-vZe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KTx-db-vvM"/>
+                            <constraint firstItem="Ipa-j9-vZe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="cwM-lX-zgc"/>
+                            <constraint firstItem="QF4-BA-Eyd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mFS-Dv-8Ot"/>
+                            <constraint firstItem="4Ld-FQ-dRt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ph0-hL-d1d"/>
+                            <constraint firstItem="4Ld-FQ-dRt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wdF-AC-F1K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
